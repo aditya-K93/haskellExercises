@@ -1,6 +1,6 @@
 -- haskell program to count maximum occuring element in list along with count
 -- eg. maxCharCount "asaddddd" == Just ('d',5) 
--- eg. maxCharCount == Nothing
+-- eg. maxCharCount '' == Nothing
 
 import qualified Data.Map as Map
 import Data.List
