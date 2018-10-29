@@ -1,4 +1,4 @@
-mergeSortHelper :: ([a] -> [a] -> [a]) -> [a] -> [a])
+mergeSortHelper :: ([a] -> [a] -> [a]) -> [a] -> [a]
 mergeSortHelper merge xs
  | length xs < 2 = xs
  | otherwise = merge (mergeSortHelper merge firstHalf) (mergeSortHelper merge otherHalf)
