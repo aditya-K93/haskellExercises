@@ -23,7 +23,7 @@ maxCharCountTuple [] = Nothing
 maxCharCountTuple xs = Just (maxCustom $ listCharCount xs)
 
 
--- OneLine Solution
+-- cleaner Solution using same logic from above
 maxCharCount :: Ord a => [a] -> Maybe (a, Int)
 maxCharCount [] = Nothing
 maxCharCount xs = Just (maxCustom $ Map.toList $ Map.fromListWith (+) [(x,1) | x <- xs])
