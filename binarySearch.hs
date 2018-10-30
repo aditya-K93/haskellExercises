@@ -11,5 +11,5 @@ binarySearch xs a
   where
         firstHalf = take (len `div` 2) xs
         secondHalf = drop (len `div` 2) xs
-        middle = head $ drop ((length xs -1) `div` 2) xs
+        middle = head $ drop ((len -1) `div` 2) xs
         len = length xs
