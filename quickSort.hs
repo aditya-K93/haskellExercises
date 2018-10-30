@@ -1,6 +1,6 @@
 -- a hacky yet neat although partial implementation of quicksort in haskell
 -- please not this is not the originally proposed quicksort algorithm as it does not sort in-place.
--- ++ concat is slow, choice of pivot being 1st element always is a poor choice. Should be random
+-- ++ concat is slow, choice of pivot being 1st element always is a poor one. Should be random
 -- an inplace implementation is rather tedious in haskell due to default immutability with vanilla dtypes
 -- do not use in production as this is order of magnitudes slower than correponding C implementation
 
