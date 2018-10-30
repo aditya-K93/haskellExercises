@@ -8,6 +8,8 @@ binarySearch xs a
  | length xs < 2 = False
  | a > middle = binarySearch secondHalf a
  | otherwise = binarySearch firstHalf a
-  where firstHalf = take (length xs `div` 2) xs
-        secondHalf = drop (length xs `div` 2) xs
+  where
+        firstHalf = take (len `div` 2) xs
+        secondHalf = drop (len `div` 2) xs
         middle = head $ drop ((length xs -1) `div` 2) xs
+        len = length xs
