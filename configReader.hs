@@ -26,12 +26,15 @@ fetchDetails user conf =
         return (lastName ++ " " ++ email)
   in r conf
 
+-- test config. Randomly picked few combinations
+
 testConfig :: Map String (String,String)
 testConfig =
   Map.fromList
     [ ("darell", ("phillip", "dphillip@gmail.com"))
     , ("james", ("smith", "jsmith@yahoo.com"))
     , ("foo", ("baz", "fbaz@mail.com"))
+    ,  ("bob", ([],[]))
     ]
 
 main :: IO()
